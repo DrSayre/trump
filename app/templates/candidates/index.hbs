@@ -1,0 +1,10 @@
+<div class="container">
+  {{#each model as |candidate|}}
+    {{#if candidate.isTrump}}
+      {{candidate.name}}: {{candidate.probability}}<br>
+    {{/if}}
+  {{/each}}
+  {{#each model as |candidate|}}
+    {{candidate.name}}: {{candidate.percentProbability}}%<br>
+  {{/each}}
+</div>
