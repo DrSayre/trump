@@ -1,0 +1,30 @@
+body {
+	background-color: #2b325f;
+  color: #ffffff;
+}
+.smallText {
+  color: #f5f4f1;
+}
+.headerBackground {
+  background-color: #980207;
+}
+.container-fluid {
+  padding-right: 0; /*15px in bootstrap.css*/
+  padding-left: 0;  /*idem*/
+  margin-right: auto;
+  margin-left: auto;
+}
+.jumbotron {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.candidatesTable {
+  font-size: 24px;
+  margin: 0px auto;
+}
+.candidateColumn {
+  text-align: left;
+}
+.probabilityColumn {
+  text-align: right;
+}
