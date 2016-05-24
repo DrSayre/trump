@@ -1,0 +1,19 @@
+<div class="container-fluid text-center">
+  {{#each model as |candidate|}}
+    {{#if candidate.isTrump}}
+      {{will-trump-win prob=candidate.percentProbability}}<br>
+    {{/if}}
+  {{/each}}
+  <div style="text-align: center;">
+  <table class="candidatesTable">
+    {{#each model as |candidate|}}
+      {{#if candidate.viable}}
+        <tr>
+          <td class='candidateColumn'>{{candidate.name}}</td>
+          <td class='probabilityColumn'>{{candidate.percentProbability}}%</td>
+        </tr>
+      {{/if}}
+    {{/each}}
+  </table>
+  </div>
+</div>
