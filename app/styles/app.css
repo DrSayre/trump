@@ -25,6 +25,19 @@ body {
 .candidateColumn {
   text-align: left;
 }
+.candidateColumn {
+  color: white;
+}
+a {
+  color: white;
+}
+a:link {
+  color: white;
+}
+a:hover {
+  text-decoration: none;
+  color: white;
+}
 .probabilityColumn {
   text-align: right;
 }

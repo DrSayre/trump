@@ -1,0 +1,9 @@
+<div class="container-fluid text-center">
+	<div class="jumbotron page-header headerBackground">
+  	<h1>{{model.name}}<br><small class='smallText'>{{model.percentProbability}}%</small></h1>
+	</div>
+	{{ember-chart type="line" data=numberData options=lineOptions legend=true}}
+	{{#link-to 'index'}}
+		Go Back
+	{{/link-to}}
+</div>
