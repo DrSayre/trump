@@ -2,8 +2,11 @@
 	<div class="jumbotron page-header headerBackground">
   	<h1>{{model.name}}<br><small class='smallText'>{{model.percentProbability}}%</small></h1>
 	</div>
+  <h2>{{link-to 'Will Trump Win?' 'index'}}</h2>
 	{{ember-chart type="line" data=numberData options=lineOptions legend=true}}
-	{{#link-to 'index'}}
-		Go Back
-	{{/link-to}}
+  <h4>
+    {{#link-to 'index'}}
+      <span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span> Go Back
+    {{/link-to}}
+  </h4>
 </div>

@@ -9,7 +9,7 @@
     {{#each model as |candidate|}}
       {{#if candidate.viable}}
         <tr>
-          {{#link-to 'candidates.show' candidate}}
+          {{#link-to 'candidates.show' candidate.id}}
             <td class='candidateColumn'>{{candidate.name}}</td>
           {{/link-to}}
           <td class='probabilityColumn'>{{candidate.percentProbability}}%</td>
