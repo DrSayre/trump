@@ -28,6 +28,15 @@ body {
 .candidateColumn {
   color: white;
 }
+.panel a:hover {
+  color: red;
+}
+.panel {
+  color: black;
+}
+.panel-link {
+  color: red;
+}
 a {
   color: white;
 }

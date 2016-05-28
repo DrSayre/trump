@@ -1,0 +1,45 @@
+<div class="container-fluid text-center">
+	<div class="jumbotron page-header headerBackground">
+    <h1>About<br><small>{{#link-to 'index'}}
+      <span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span> Go Back{{/link-to}}</small></h1>
+  </div>
+  <div class='container'>
+    {{#bs-accordion}}
+      {{#bs-accordion-item value='1' title='What does the numbers mean?' class='panel-danger'}}
+        <p>
+          The number for each candidate is the probability the candidate has based on the latest odds listed from several online sports book found from <a class='panel-link' href="http://www.oddschecker.com/politics/us-politics/us-presidential-election-2016/winner" target="_blank">Oddschecker.com</a>. Even though it is not legal to bet on elections in the United States, it is legal overseas.
+        </p>
+      {{/bs-accordion-item}}
+      {{#bs-accordion-item value='2' title='Why are you using odds from online sports instead of polls?' class='panel-danger'}}
+        <p>
+          The tl;dr version (too long, didn't read) is it's better and more accurate than polls.
+        </p>
+        <p>
+          Polls have become increasingly inaccurate over the past few years. A couple examples of this is the 2014 midterm election and the 2015 Kentucky gubernatorial election.
+        </p>
+        <p>
+          A large part of the problem is it is not as easy to poll people. How often do you answer the phone when it's from an unknown number?
+        </p>
+        <p>
+          Regardless, polls are still accurate, but it's important to be able to tell the difference between polls that are good and polls that are not. (I recommended looking up <a class='panel-link' href="https://twitter.com/NateSilver538" target="_blank">Nate Silver from 538</a> and the other <a class='panel-link' href="http://fivethirtyeight.com/" target="_blank">538 writers</a> for more information about polling.) The bookies can tell which polls are good and set odds that accurately indidcate the current state of the presidential election.
+        </p>
+      {{/bs-accordion-item}}
+      {{#bs-accordion-item value='3' title='Why are you doing this?' class='panel-danger'}}
+        <p>
+          A few days before the 2012 election, several polls came out that had Mitt Romney in the lead. Lots of people thought Romney would become president. However, Romney was a huge underdog and would lose. People who looked at the odds and prediction markets knew this. People who looked at the polls did not.
+        </p>
+      {{/bs-accordion-item}}
+      {{#bs-accordion-item value='4' title='Are you voting for Trump?' class='panel-danger'}}
+        <p>
+          Probably not. I do not like either candidate from the Democrat and Republican party and will probably vote for someone else.
+        </p>
+      {{/bs-accordion-item}}
+      {{#bs-accordion-item value='5' title='Where are these phrases coming from?' class='panel-danger'}}
+        <p>
+          The phrases are Magic 8-Ball responses. If a candidate has less than 40% chance of winning, they will get a random negative answer. If a candidate has a greater than 60% chance of winning, they will get a random positive answer. Otherwise they get a neutral answer.
+        </p>
+      {{/bs-accordion-item}}
+    {{/bs-accordion}}
+  </div>
+</div>
+{{outlet}}

@@ -1,8 +1,7 @@
 <div class="container-fluid text-center">
 	<div class="jumbotron page-header headerBackground">
-  	<h1>{{model.name}}<br><small class='smallText'>{{model.percentProbability}}%</small></h1>
+  	<h1>Will {{model.name}} Win?<br><small class='smallText'>{{model.status}}<br></small></h1>
 	</div>
-  <h2>{{link-to 'Will Trump Win?' 'index'}}</h2>
 	{{ember-chart type="line" data=numberData options=lineOptions legend=true}}
   <h4>
     {{#link-to 'index'}}

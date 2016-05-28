@@ -9,9 +9,10 @@ const Router = Ember.Router.extend(googlePageview, {
 Router.map(function() {
   this.route('candidates', {resetNamespace: true}, function() {
     this.route('show', {
-    	path: ':candidate_id'
+        path: ':candidate_id'
     });
   });
+  this.route('about');
 });
 
 export default Router;

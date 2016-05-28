@@ -4,6 +4,7 @@ import Ember from 'ember';
 export default DS.Model.extend({
   name: DS.attr('string'),
   probability: DS.attr('number'),
+  status: DS.attr('string'),
   meanSamples: DS.hasMany('mean-sample'),
   isTrump: Ember.computed('name', {
   	get() {
