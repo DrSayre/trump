@@ -3,12 +3,10 @@
 module.exports = function(deployTarget) {
   var ENV = {
     build: {},
-    s3: {
-      filePattern: '**/*.{js,css,png,gif,ico,jpg,map,xml,txt,svg,swf,eot,ttf,woff,woff2,html}',
-      accessKeyId: 'AKIAJOYW2YSFFUQZBCTQ',
-      secretAccessKey: '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',
-      bucket: 'will-donald-trump-win',
-      region: 'us-east-1'
+    scp: {
+      username: 'deploy',
+      host: '192.241.190.158',
+      path: '/home/deploy/apps/election-api/current/public'
     }
     // include other plugin configuration that applies to all deploy targets here
   };
