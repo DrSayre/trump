@@ -40,7 +40,7 @@ body {
 .panel-danger a {
   color: #a94442;
 }
-.panel-link a {
+.panel-link .panel-title a {
   color: #a94442;
 }
 a {
