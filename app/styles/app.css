@@ -37,6 +37,12 @@ body {
 .panel-link {
   color: red;
 }
+.panel-danger a {
+  color: #a94442;
+}
+.panel-link a {
+  color: #a94442;
+}
 a {
   color: white;
 }
